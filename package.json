@@ -1,0 +1,35 @@
+{
+  "name": "pown-captcha",
+  "version": "0.0.0",
+  "description": "Pownage guaranteed",
+  "main": "index.js",
+  "scripts": {
+    "captcha": "POWN_ROOT=./ pown captcha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-captcha.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework"
+  ],
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-captcha/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-captcha#readme",
+  "dependencies": {
+    "tesseract.js": "^1.0.10"
+  },
+  "pown": {
+    "commands": [
+      "./index.js"
+    ]
+  },
+  "devDependencies": {
+    "pown-cli": "^0.2.1"
+  }
+}

@@ -1,6 +1,6 @@
 exports.yargs = {
     command: 'captcha [options] <file>',
-    describe: 'list contributors and credits',
+    describe: 'crack captchas like a boss',
 
     builder: function (builder) {
         const chalk = require('chalk')

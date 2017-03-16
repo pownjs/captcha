@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/pownjs/pown-captcha#readme",
   "dependencies": {
+    "chalk": "^1.1.3",
     "tesseract.js": "^1.0.10"
   },
   "pown": {

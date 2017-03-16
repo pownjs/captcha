@@ -2,12 +2,26 @@ exports.yargs = {
     command: 'captcha [options] <file>',
     describe: 'list contributors and credits',
 
-    builder: {
-        numbers: {
+    builder: function (builder) {
+        const chalk = require('chalk')
+
+        const banner = chalk.green(`
+ ██████╗ █████╗ ██████╗ ████████╗ ██████╗██╗  ██╗ █████╗ 
+██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║  ██║██╔══██╗
+██║     ███████║██████╔╝   ██║   ██║     ███████║███████║
+██║     ██╔══██║██╔═══╝    ██║   ██║     ██╔══██║██╔══██║
+╚██████╗██║  ██║██║        ██║   ╚██████╗██║  ██║██║  ██║
+ ╚═════╝╚═╝  ╚═╝╚═╝        ╚═╝    ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+`)
+
+        builder.usage(`${banner}${this.original}`)
+
+        builder.option('number', {
             type: 'boolean',
             alias: 'n',
             describe: 'Only crack numbers'
-        }
+        })
     },
 
     handler: (argv) => {

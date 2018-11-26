@@ -1,6 +1,8 @@
-# pown-captcha  [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/pownjs/Lobby)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/pownjs.svg?logo=twitter)](https://twitter.com/pownjs)
 
-> Pown.js tool for cracking captcha
+# Pown Captcha
+
+Pown.js tool for cracking captcha based on Tesseract.js.
 
 ## Quickstart
 

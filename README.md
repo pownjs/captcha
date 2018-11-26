@@ -4,7 +4,7 @@
 
 Pown.js tool for cracking captcha based on Tesseract.js.
 
-## Quickstart
+## Getting Started
 
 From the same directory as your project's package.json, install this module with the following command:
 
@@ -18,7 +18,13 @@ Once that's done, you can invoke pown captcha like this:
 $ ./node_modules/.bin/pown captcha
 ```
 
-If installed globally or as part of Pown.js distribution invoke like this:
+If installed globally you can invoke the tool like this:
+
+```sh
+$ pown-captcha
+```
+
+Otherwise you can invoke the command via Pown.js distribution:
 
 ```sh
 $ pown captcha

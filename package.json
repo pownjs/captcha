@@ -2,9 +2,12 @@
   "name": "pown-captcha",
   "version": "0.3.0",
   "description": "Pownage guaranteed",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "bin": {
+    "pown-captcha": "bin/captcha.js"
+  },
   "scripts": {
-    "captcha": "POWN_ROOT=./ pown captcha"
+    "command": "POWN_ROOT=./ pown captcha"
   },
   "repository": {
     "type": "git",
@@ -22,15 +25,13 @@
   },
   "homepage": "https://github.com/pownjs/pown-captcha#readme",
   "dependencies": {
-    "chalk": "^1.1.3",
+    "chalk": "^2.4.1",
+    "pown-cli": "^0.4.0",
     "tesseract.js": "^1.0.10"
   },
   "pown": {
     "commands": [
-      "./index.js"
+      "./lib/command.js"
     ]
-  },
-  "devDependencies": {
-    "pown-cli": "^0.2.1"
   }
 }
